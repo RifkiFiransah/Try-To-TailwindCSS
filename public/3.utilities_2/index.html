@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Belajar TailwindCSS ~ Utilities 2 (Backgorund & Border, Rounded & Shadow,
+      Effects & Filter)
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: "Inter",
+            },
+            colors: {
+              wpu: "#bada55",
+              kopi: "#c0ffee",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1 class="text-center text-5xl font-bold my-10">
+      Let's Statarted With
+      <span
+        class="bg-gradient-to-r from-cyan-500 to-blue-800 bg-clip-text text-transparent"
+        >TailwindCSS</span
+      >
+    </h1>
+
+    <section
+      id="spacing mb-5"
+      class="mb-5 bg-gradient-to-tr from-indigo-400 via-green-400 to-teal-400"
+    >
+      <h2 class="text-center text-3xl">Spacing</h2>
+      <!-- m-12, -m-12, mr-12, ml-12, mt-12, mb-12, mx-12, my-12 -->
+      <!-- Margin - auto -->
+      <div class="m-13">Margin</div>
+
+      <!-- p-12, pr-12, pl-12, pt-12, pb-12, px-12, py-12 -->
+      <!-- Padding tidak ada Auto & Minus -->
+      <div class="p-8">Padding</div>
+    </section>
+
+    <section id="sizing mb-8" class="mb-5 bg-wpu">
+      <h2>Sizing</h2>
+      <!-- Width & Height -->
+      <div class="w-32 h-32 bg-kopi">Kotak 1</div>
+      <div class="max-w-xs min-h-full">Kotak 2</div>
+    </section>
+
+    <section id="typography" class="font-inter mx-auto max-w-lg">
+      <h2 class="mb-2 text-4xl font-bold">Tailwind CSS Typograhapy</h2>
+      <div class="mb-4 text-lg">By Rifki Firansah</div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet
+        <a href="#" class="underline font-semibold">consectetur</a> adipisicing
+        elit. Distinctio in, nemo nulla corporis rerum ipsa enim expedita
+        necessitatibus eligendi sint ab voluptate corrupti incidunt consequatur,
+        recusandae error esse ipsum Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Et fugiat dolorem nemo aut dolorum, quibusdam
+        exercitationem a doloremque, enim ratione porro rem, dolor adipisci
+        recusandae! Delectus hic quis harum laboriosam.
+      </p>
+      <blockquote class="mb-4 font-thin italic text-lg">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsa
+        perspiciatis accusamus dolore doloribus debitis obcaecati omnis sint
+        sed. Earum?""
+      </blockquote>
+      <p class="mb 4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+        adipisci suscipit? Esse, corrupti aperiam nisi eligendi laboriosam
+        repudiandae eos architecto iure fuga nihil. Repellendus aliquid
+        officiis, dignissimos consequuntur debitis eveniet.
+      </p>
+    </section>
+
+    <!-- Background & Border -->
+    <!-- Arbitrary value bg-[px] atau mt-[px] -->
+    <section>
+      <!-- Background Attachment -->
+      <!-- bg-fixed, bg-local, bg-scroll -->
+      <div
+        class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] p-5 text-2xl overflow-y-scroll bg-fixed"
+        style="
+          background-image: url('https://source.unsplash.com/1000x600?computer');
+        "
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
+        exercitationem dicta autem, quod asperiores quos, facilis consectetur
+        iste dolorem nam voluptatum consequatur aut vel recusandae corrupti
+        voluptas labore praesentium. Amet enim molestias voluptate dolorum
+        libero totam repellendus dolorem, voluptatem sed, reprehenderit, odio
+        illo? Rerum nesciunt minima nulla animi, deserunt quae libero facilis
+        incidunt quasi cumque fugit est inventore adipisci natus ipsam iste!
+        Dolore labore assumenda, quia, temporibus molestias consectetur sint
+        tenetur cumque fugiat accusamus fuga qui, ut quae ad suscipit? Nihil
+        veniam nam totam atque maxime dolores expedita qui numquam corrupti
+        corporis magnam in, quod sed consequuntur quibusdam impedit dolorem eum
+        excepturi? Nostrum veritatis maxime quisquam commodi, laborum dolorum,
+        ipsa sit architecto nesciunt quod qui, dicta perferendis error ullam
+        recusandae harum. Necessitatibus, odio ipsum maxime sequi possimus quo
+        quaerat fuga autem, provident impedit aliquam perferendis eaque quas
+        illo temporibus adipisci facilis labore nemo ab corrupti? Deserunt
+        minima nemo facere eum minus eligendi eveniet dolor iusto delectus ab,
+        fugiat ipsa harum, pariatur, temporibus autem quod? Sequi alias, debitis
+        accusantium reiciendis minus, ducimus saepe quasi rerum placeat, at vero
+        optio illum voluptates ipsam itaque atque ratione. Officiis nemo illum
+        quasi placeat aut voluptatibus blanditiis dolorum magni culpa magnam
+        iste, distinctio assumenda omnis!
+      </div>
+
+      <!-- Background Size & position & repeat-->
+      <!-- bg-cover, bg-contains, bg-auto-->
+      <!-- bg-center -->
+      <div
+        class="max-w-xl h-96 bg-slate-300 mt-32 mx-auto overflow-hidden bg-contain bg-center bg-no-repeat rounded-3xl border-8 border-slate-600 ring-8 opacity-70 shadow-xl shadow-slate-700 bg-blend-multiply flex"
+        style="background-image: url('../img/2.jpeg')"
+      >
+        <!-- Effects -->
+        <!-- box-shadow, box-shadow-color, mix-blend-mode, bg-blend-mode, opaciti -->
+        <!-- <div class="w-full h-full bg-teal-500 mix-blend-screen"></div> -->
+
+        <!-- Filter -->
+        <!-- Blur, Brightness, backdrop-blur, backdrop -->
+        <div
+          class="w-[200px] h-[200px] bg-white/20 m-auto backdrop-blur-sm"
+        ></div>
+      </div>
+      <!-- Borders -->
+      <!-- width, color, radius, style, divide, outline, ring -->
+    </section>
+
+    <div class="mb-96"></div>
+  </body>
+</html>
