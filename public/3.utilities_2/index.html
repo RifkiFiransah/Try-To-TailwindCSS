@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,7 +32,7 @@
             },
             animation: {
               "spin-slow": "spin 3s linear infinite",
-              goyang: "goyang 3s linear infinite",
+              goyang: "goyang 1s ease-in-out infinite",
             },
             keyframes: {
               goyang: {
@@ -245,6 +245,68 @@
       <div
         class="w-40 h-40 rounded-lg bg-pink-600 mt-20 mx-auto animate-goyang"
       ></div>
+    </section>
+
+    <hr class="my-20 border-t-4" />
+
+    <!-- Layouting -->
+    <section class="container mx-auto">
+      <div class="border rounded-lg shadow-lg p-10 relative">
+        <div
+          class="w-10 h-10 bg-pink-500 rounded-full cursor-pointer flex absolute -top-5 -right-3"
+        >
+          <span class="text-lg m-auto">❌</span>
+        </div>
+        <img src="../img/2.jpeg" width="150" class="float-left mr-2" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          sequi, repudiandae rem neque iure a obcaecati ullam officiis incidunt
+          dolores possimus quidem soluta suscipit? Sapiente quas odio illum!
+          Animi hic, dolore laboriosam nisi quidem eum repellendus dolores
+          temporibus aperiam repudiandae velit veniam, consequatur iste
+          voluptates nihil inventore! Facere, quam quaerat.
+        </p>
+        <div
+          class="w-10 h-10 bg-sky-500 rounded-full cursor-pointer flex absolute -bottom-5 left-1/2 -translate-x-1/2"
+        >
+          <a href="#" class="text-lg m-auto">🔝</a>
+        </div>
+      </div>
+
+      <div
+        class="container border rounded-lg shadow-lg p-10 relative mt-20 columns-3"
+      >
+        <img
+          src="https://source.unsplash.com/600x400/"
+          alt="Images"
+          class="mb-4"
+        />
+        <img
+          src="https://source.unsplash.com/600x400"
+          alt="Images"
+          class="mb-4"
+        />
+        <img
+          src="https://source.unsplash.com/600x400"
+          alt="Images"
+          class="mb-4"
+        />
+        <img
+          src="https://source.unsplash.com/600x400"
+          alt="Images"
+          class="mb-4"
+        />
+        <img
+          src="https://source.unsplash.com/600x400"
+          alt="Images"
+          class="mb-4"
+        />
+        <img
+          src="https://source.unsplash.com/600x400"
+          alt="Images"
+          class="mb-4"
+        />
+      </div>
     </section>
 
     <div class="mb-96"></div>
